@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
+
+
 
 # read csv assgin to df
 df = pd.read_csv('usdzar.csv')
 df.plot()
-
+plt.show()
 # pandas to_datetime(df['日付']) ,string to timestayke
 df["time"] = pd.to_datetime(df['日付'])
 # print(df["time"])
@@ -38,4 +39,4 @@ ax.grid()
 ax.legend()
 
 # print dataframe
-print(df)
+print(golden)
