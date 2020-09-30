@@ -46,8 +46,9 @@ for item in df['NOTENUM'].iloc[::-1]:
   print(item)
   note = pretty_midi.Note(velocity=100, pitch=item+24, start=midi_start, end=midi_end)
   instrument.notes.append(note)
-  midi_start +=1
-  midi_end +=1
+  midi_start +=0.5
+  midi_step = 0.2
+  midi_end  = midi_start + midi_step
 
 
 pm.instruments.append(instrument)
