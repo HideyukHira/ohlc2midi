@@ -5,6 +5,10 @@ pm = pretty_midi.PrettyMIDI(resolution=960, initial_tempo=120)
 #instrumentはトラックみたいなものです。
 instrument = pretty_midi.Instrument(0)
 
+# TODO CHECK can nodenumber
+#pretty_midi.Note(velocity, pitch, start, end)
+
+
 note_number = pretty_midi.note_name_to_number('G4')
 #noteはNoteOnEventとNoteOffEventに相当します。
 note = pretty_midi.Note(velocity=100, pitch=note_number, start=0, end=1)
