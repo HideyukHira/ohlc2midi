@@ -32,7 +32,7 @@ index_d = [i for i, x in enumerate(dead) if x == True]
 ax = df['終値'].plot(color="blue", label="Close")
 ma5d.plot(ax=ax, ls="--", color="red", label="MA 5d")
 ma_75d.plot(ax=ax, ls="--", color="green", label="MA 75d")
-
+plt.show()
 print(df["日付"][index_g])
 print("=====-")
 print(df["日付"][index_d])
