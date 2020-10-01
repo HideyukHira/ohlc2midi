@@ -52,7 +52,7 @@ for item in df['NOTENUM'].iloc[::-1]:
 
 
 pm.instruments.append(instrument)
-pm.write('test.mid') #midiファイルを書き込みます。
+pm.write('usdzar.mid') #midiファイルを書き込みます。
 
 
 
